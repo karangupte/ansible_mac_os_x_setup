@@ -1,0 +1,5 @@
+- name: Install some commonly used multimedia software
+  homebrew_cask:  name={{ item }} state=installed
+  with_items:
+  - plex-media-player
+  - plex-media-server

@@ -1,0 +1,7 @@
+  - name: Install databases
+    homebrew:  name={{ item }} state=present
+    with_items:
+      - postgresql
+      - redis
+      - neo4j
+      - cassandra

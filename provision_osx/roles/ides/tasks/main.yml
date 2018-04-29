@@ -1,6 +1,9 @@
   - name: Install development tools
-    homebrew_cask:  name={{ item }}
+    homebrew_cask:  name={{ item }} state=present
     with_items:
       - visual-studio-code
       - eclipse-ide
-      - iterm2
+      - android-sdk
+      - android-studio
+      - scala-ide
+      - intellij-idea-ce

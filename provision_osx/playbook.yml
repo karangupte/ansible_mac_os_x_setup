@@ -1,38 +1,7 @@
-- hosts: all
+- hosts: localhost
   become_method: 'sudo'
   roles:
+  - browsers
+  - multimedia
   - ides
-
-# - hosts: all
-#   become_method: 'sudo'
-#   tasks:
-#   - name: Update Homebrew
-#     homebrew:
-#       update_homebrew: yes
-#       state: upgraded
-#   - name: Install our favorite languages
-#     homebrew: name={{ item }}
-#     with_items:
-#       - python
-#       - python3
-#       - openjdk8
-#       - scala
-#       - go
-#   - name: Install our development tools
-#     homebrew_cask: name={{ item }}
-#     with_items:
-#       - visual-studio-code
-#       - eclipse-ide
-#       - iterm2
-#       # state: present
-#   - name: Install eclipse
-#     homebrew_cask:
-#       name: eclipse-ide
-#       state: present
-#   - name: Install Virtualbox and Vagrant via brew cask
-#     homebrew_cask: name={{ item }}
-#     with_items:
-#       - virtualbox
-#       - vagrant
-
-
+  - databases
