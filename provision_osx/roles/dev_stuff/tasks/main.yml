@@ -1,0 +1,4 @@
+  - name: Install Play framework for scala
+    homebrew:  name={{ item }} state=present
+    with_items:
+      - typesafe-activator
