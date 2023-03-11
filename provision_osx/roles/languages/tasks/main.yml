@@ -1,4 +1,7 @@
-  - name: Install Java
-    homebrew_cask:  name={{ item }} state=present
+  - name: Install Programming languages
+    homebrew:  name={{ item }} state=present
     with_items:
       - java
+      - java11
+      - scala
+      - python3
