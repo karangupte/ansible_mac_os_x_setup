@@ -5,3 +5,7 @@
   - multimedia
   - ides
   - databases
+  - languages
+
+  vars_files:
+    - group_vars/common_vars.yml
