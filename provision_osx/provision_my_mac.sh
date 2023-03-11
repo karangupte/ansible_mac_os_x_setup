@@ -13,7 +13,7 @@ mkdir -p ~/VirtualEnvs
 cd ~/VirtualEnvs
 if [ ! -e ~/VirtualEnvs/ansible_venv ]
 then  
-    virtualenv -p python3.5 ansible_venv
+    virtualenv -p python3 ansible_venv
 fi
 . ansible_venv/bin/activate
 
